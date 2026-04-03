@@ -1,0 +1,57 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Emily Johnson",
+            "role": "UI/UX Designer",
+            "bio": "Passionate designer focused on creating modern and user-friendly interfaces.",
+            "image": "https://dummyjson.com/icon/emilys/128",
+            "skills": [
+                "Figma",
+                "Adobe XD",
+                "User Research",
+                "Prototyping"
+            ],
+            "experience": [
+                {
+                    "title": "Senior UI Designer",
+                    "company": "Creative Studio",
+                    "period": "2021 - Present",
+                    "description": "Leading design projects, improving user experience, and collaborating with developers to build modern web applications."
+                },
+                {
+                    "title": "UI Designer",
+                    "company": "Digital Agency",
+                    "period": "2019 - 2021",
+                    "description": "Worked on client projects including landing pages, dashboards, and mobile apps."
+                }
+            ],
+            "education": [
+                {
+                    "degree": "Bachelor in Graphic Design",
+                    "school": "University of Design",
+                    "period": "2015 - 2019"
+                }
+            ],
+            "projects": [
+                {
+                    "title": "E-commerce Dashboard",
+                    "description": "Modern dashboard design for managing products and orders.",
+                    "image": "https://via.placeholder.com/300",
+                    "link": "#"
+                },
+                {
+                    "title": "Mobile Banking App",
+                    "description": "Clean and intuitive mobile app UI for finance management.",
+                    "image": "https://via.placeholder.com/300",
+                    "link": "#"
+                }
+            ],
+            "social": {
+                "linkedin": "#",
+                "github": "#",
+                "website": "#"
+            }
+        }
+    ]
+}
