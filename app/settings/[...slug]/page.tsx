@@ -1,27 +1,30 @@
 import React from 'react'
 
-export default async function SettingPages({
-  params, // had params kayji mn URL
-}: {
-  params: Promise<{ slug: string[] }> // params howa Promise
-}) {
+const Profile = () => <h1>PROFILE PAGE</h1>
+const Security = () => <h1>SECURITY PAGE</h1>
+const Account = () => <h1>ACCOUNT PAGE</h1>
+const NotFoundPage = () => <h1>NOT FOUND</h1>
 
-  // khasna ntsnaw params bach n5rjo slug
+const pages: Record<string, React.ReactNode> = {
+  profile: <Profile />,
+  security: <Security />,
+  account: <Account />,
+}
+
+export default async function SettingPages({
+  params,
+}: {
+  params: Promise<{ slug: string[] }>
+}) {
   const { slug } = await params
 
-  // exemple:
-  // /settings/profile/security
-  // slug = ["profile", "security"]
+  const firstSegment = slug?.[0]
+  const content = pages[firstSegment] || <NotFoundPage />
 
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-
-      {/* kan affichi slug */}
       <p>{JSON.stringify(slug)}</p>
-
-      {/* test bach nchof page khdama */}
-      <h1>TEST</h1>
-
+      {content}
     </div>
   )
 }
