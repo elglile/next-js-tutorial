@@ -1,3 +1,4 @@
+import Album from "@/components/Album";
 import MenuBar from "@/components/MenuBar";
 import User from "@/components/User";
 import Image from "next/image";
