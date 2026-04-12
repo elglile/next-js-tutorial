@@ -48,9 +48,10 @@ return (
   </div>
 );
 }
+
 export default async function Album(){
   return   <div className="grid grid-cols-2 gap-4">
-    <Suspense>
+    <Suspense fallback={<SkeletonCard/>}>
       <AlbumList/>
     </Suspense>
   </div>
