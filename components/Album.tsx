@@ -1,5 +1,6 @@
 // import Image from "next/image";
 // loading using REACT SUSPENSE
+// f normal jhad lcode ikon f page ta3 Album page o it aficha mn lik ta3 /Album mais 7atit syntax hnaya bach n5dem syntax ta3 next
 import React, { Suspense } from 'react';
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
