@@ -1,9 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
+// import type { Product } from "@/types";
 
+type Product = {
+  id: number;
+  title: string;
+  description: string;
+  price: number;
+  image: string;
+};
 
-
-export default function ProductsList({ products }) {
+export default function ProductsList
+// ({ products }) 
+({
+  products,
+}: {
+  products: Product[];
+}) 
+{
 
   return (
     <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[90%] mx-auto pt-4">        {products.map((e) => (

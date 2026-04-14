@@ -3,7 +3,7 @@ import UnlukyNemberError from "@/lib/UnlukyNemberError";
 
 export default function Random() {
   const randomNumber = Math.floor(Math.random() * 10);
-
+// hada 5Ass it7ayd f l build 
   if (randomNumber > 6) {
     throw new UnlukyNemberError('Unlucky Number');
   }
