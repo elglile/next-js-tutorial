@@ -1,9 +1,10 @@
 // 🧩 2) Page (فين كنرمي error)
+export const dynamic = "force-dynamic";
 import UnlukyNemberError from "@/lib/UnlukyNemberError";
 
 export default function Random() {
   const randomNumber = Math.floor(Math.random() * 10);
-// hada 5Ass it7ayd f l build 
+// hada 5Ass it7ayd f l build D
   if (randomNumber > 6) {
     throw new UnlukyNemberError('Unlucky Number');
   }
